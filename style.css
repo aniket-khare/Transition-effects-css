@@ -1,0 +1,442 @@
+:root{
+    --blue1:  #3B80EE;
+    --backgroundcolor: #f1f3f4;
+    --white: white;
+    --grey:  rgb(117, 117, 117);
+    --lightred: tomato;
+    --skyblue: #0AF;
+    --boxshadowing: rgba(0, 0, 0, 0.1);
+    --lightyellow: lightyellow;
+    --green: green;
+    --lightergreen: chartreuse;
+}
+
+
+
+.main-div{
+    display: flex;
+    background-color: var(--backgroundcolor);
+    height: 753px;
+}
+.left-panel{
+
+    width: 50%;
+
+}
+.right-panel{
+    width: 50%;
+}
+.heading1{
+    text-align: left;
+    margin-left: 35%;
+    margin-top: 4%;
+}
+.line{
+  color: var(--blue1);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 1rem;
+
+}
+.first1{
+    font-size: 1.2rem;
+}
+.box1{
+    text-align: center;
+    margin-top: 3%;
+    border: 1px solid var(--backgroundcolor);
+    height: 150px;
+    width: 24rem;
+    margin-left: 26%;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px var(--boxshadowing);
+}
+.arrow10{
+    margin-left: 27rem;
+}
+.arrow11{
+    margin-left: 26rem;
+}
+.arrow12{
+    margin-left: 27.5rem;
+}
+.arrow13{
+    margin-left: 31.9rem;
+}
+.arrow14{
+    margin-left: 27.3rem;
+}
+.arrow15{
+    margin-left: 21.7rem;
+}
+
+/* .ads-list p span img{
+    float: right;
+} */
+.end-arrow-right{
+    width: 19px;
+    height: 19px;
+    
+}
+
+
+.dotclass{
+    padding-top: 5px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+.calendar{
+    margin-right: 7%;
+    color: var(--grey);
+}
+.calendar-img{
+    width: 29px;
+    height: 29px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 0.2rem 0 0.2rem 0;
+    transition: transform 1s;
+}
+.calendar:hover{
+    color: var(--lightred);
+    cursor: pointer;
+}
+.calendar-img:hover{
+
+    transform: rotate(360deg) translateZ(0);
+}
+.plus-element{
+    transition: transform 1s;
+}
+.plus-element:hover{
+    transform: rotate(360deg) translateZ(0);
+}
+
+.bt1{
+    width: 10rem;
+    background: var(--white);
+    border: 0px solid var(--grey);
+    /* border-radius: 10px; */
+    cursor: pointer;
+    padding-bottom: 10px;
+    position: relative;
+}
+.bt1.slidingcolor::before{
+    content: ''; /* using content as empty string */
+    position: absolute;
+    top: 0;  /*top,left,bottom, right zero is taken so that it takes full size of the button */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color: #0AF; */
+    background-color: var(--skyblue); /* covering entire button at first */
+    z-index: -1; /* so using z index as -1 it is now behind the element */
+    transition: transform 700ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+/* hover and focus are on the button not before element */
+.bt1.slidingcolor:hover::before,
+.bt1.slidingcolor:focus::before{
+    transform: scaleX(1);
+}
+.bt1.slidingcolor{
+    z-index: 1;
+}
+
+.text2{
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+
+}
+.finger{
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+    padding: 0.2rem 0 0.2rem 0;
+
+
+}
+.bt2{
+    width: 12rem;
+    background: var(--white);
+    border: 0px solid var(--grey);
+    /* border-radius: 10px; */
+    cursor: pointer;
+    padding-bottom: 10px;
+    position: relative;
+}
+.bt2.slidingcolor::before{
+    content: ''; /* using content as empty string */
+    position: absolute;
+    top: 0;  /*top,left,bottom, right zero is taken so that it takes full size of the button */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--skyblue); /* covering entire button at first */
+    z-index: -1; /* so using z index as -1 it is now behind the element */
+    transition: transform 700ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+/* hover and focus are on the button not before element */
+.bt2.slidingcolor:hover::before,
+.bt2.slidingcolor:focus::before{
+    transform: scaleX(1);
+}
+.bt2.slidingcolor{
+    z-index: 1;
+}
+.heading2{
+    text-align: left;
+    margin-left: 35%;
+    margin-top: 2rem;
+}
+.text3{
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+}
+.box2{
+    margin-top: 1.5rem;
+    display: flex;
+    border: 1px solid var(--backgroundcolor);
+    width: 24rem;
+    margin-left: 26%;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px var(--boxshadowing);
+}
+
+.menu1{
+    width: 3.1rem;
+    height: 3.1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    
+    transition: transform 1s;
+    cursor: pointer;
+}
+.menu1:hover{
+    transform: rotate(90deg) translateZ(0);
+}
+.shopping{
+    padding-top: 2rem;
+}
+.downarrow{
+    padding-top: 2rem;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.p1{
+    font-size: 1.8em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.p2{
+    margin-top: 5px;
+    color: #e74c3c;
+}
+.box3{
+    margin-top: 1.5rem;
+    border: 1px solid var(--backgroundcolor);
+    width: 24rem;
+    margin-left: 26%;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px var(--boxshadowing);
+}
+.calimg{
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+
+}
+.p3{
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+.plussign{
+    margin-top: 1rem;
+
+}
+.rounded-button{
+    width: 55px;
+    height: 55px;
+    background: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 72%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    box-shadow: 0px 10px 10px var(--boxshadowing);
+
+}
+.rounded-button:hover{
+    background: #0AF;
+}
+
+
+.y{
+    height: 20px;
+    background: var(--lightyellow);
+}
+.ads{
+    margin-top: 2rem;
+}
+h2{
+    text-align: center;
+}
+.eyegif{
+    text-align: right;
+}
+#eyes{
+    width: 1.8em;
+    margin-right: 3rem;
+}
+.greenline{
+    border: 3px solid var(--green);
+    background-color: var(--green);
+    margin: 0 20px 0 20px;
+
+}
+.ads-button-type{
+    margin: 15px 20px 5px 20px;
+    height: 35px;
+    width: 95%;
+    background: var(--white);
+    display: inline-flex;
+    padding-left: 2rem;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    padding-top: 7px;
+    font-weight: bold;
+}
+.ads-button-type.slider::before{
+    content: ''; /* using content as empty string */
+    position: absolute;
+    top: 0;  /*top,left,bottom, right zero is taken so that it takes full size of the button */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color: #0AF; */
+    background-color: var(--lightergreen); /* covering entire button at first */
+    z-index: -1; /* so using z index as -1 it is now behind the element */
+    transition: transform 700ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+/* hover and focus are on the button not before element */
+.ads-button-type.slider:hover::before,
+.ads-button-type.slider:focus::before{
+    transform: scaleX(1);
+}
+.ads-button-type.slider{
+    z-index: 1;
+}
+
+
+
+
+
+.belowtext{
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+.smalladimage{
+
+    width: 20px;
+    height: 20px;
+}
+.para1{
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+.c1{
+    float: right;
+    margin-right: 3%;
+}
+.copy{
+    width: 20px;
+    height: 20px; 
+}
+/* ---------------------- Mobile Friendly ------------------------ */
+
+@media screen and (max-width: 768px){
+    .main-div{
+       display: flex;
+       flex-direction: column;
+    }
+    .left-panel{
+        width: 100%;
+    }
+    .right-panel{
+        width: 100%;
+    }
+    .box1{
+        height: 180px;
+    }
+    .box2, .box1, .box3{
+        width: 290px;
+        margin-left: 12%;
+
+    }
+    .p1{
+        font-size: 1.2em;
+    }
+    .down-arrow{
+       margin-right: 5px;
+    }
+    .menu1{
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+    .ads-button-type{
+        width: 80%;
+
+    }
+    .greenline{
+        width: 78%;
+    }
+    .plussign{
+        margin-bottom: 3%;
+    }
+    .main-div{
+        height: 1160px;
+    }
+    .heading2, .heading1{
+        text-align: left;
+        margin-left: 10%;
+    }
+    .bt1{
+        margin-bottom: 10px;
+    }
+    .bt2{
+        margin-bottom: 10px;
+    }
+    .arrow10, .arrow11, .arrow12, .arrow14, .arrow15{
+        margin-left: 20px;
+    }
+    .arrow13{
+        margin-left: 10px;
+    }
+    .c1{
+        float: left;
+        
+    }
+}
